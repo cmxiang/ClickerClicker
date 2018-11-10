@@ -1,0 +1,358 @@
+@font-face { font-family: Minecraft; src: url('Minecraft.ttf'); } 
+
+@keyframes incr_animation {
+	0% { background-color: orange; }
+	25% { background-color: red; }
+	50% { background-color: orange; }
+	75% { background-color: red; }
+	100% { background-color: orange; }
+}
+
+html, body {
+	font-family: Minecraft;
+	margin: 0;
+	padding: 0;
+}
+
+#theend {
+	height: 100%;
+	width: 100%;
+	z-index: 999;
+	position: fixed;
+	background-color: white;
+}
+
+#theendtext {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+}
+
+.container{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.header {
+	text-align: center;
+	position: relative;
+}
+
+#title {
+	font-size: 24px;
+}
+
+.content-container {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding-top: 110px;
+}
+
+.events-container {
+	display: flex;
+	padding: 1% 0 1% 0;
+	background-color: black;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.left-container, .mid-container, .right-container {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	position: relative;
+	margin: 0 1% 0 1%;
+	padding-top: 1%;
+	overflow: scroll;
+}
+
+.mid-container {
+	align-items: center;
+	justify-content: center;
+}
+
+.outercontainer{
+	display: flex;
+	flex-direction: column;
+	height: 50%;
+	overflow: scroll;
+	background-color: black;
+}
+
+.innercontainer {
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	width: 100%;
+	padding: 1% 0 1% 0;
+	justify-content: space-between;
+	background-color: white;
+	height: 60px;
+	margin-bottom: 3px;
+}
+
+.section-label {
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+#cursorimg {
+	height: auto;
+	width: auto;
+	max-height: 95%;
+	max-width: 70%;
+	z-index: 900;
+}
+
+button {
+	width: 100px;
+	height: 40px;
+	border: none;
+	color: white;
+	background-color: black;
+	font-family: Minecraft;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+@keyframes incr_animation {
+	0% { background-color: pink; }
+	25% { background-color: red; }
+	50% { background-color: pink; }
+	75% { background-color: red; }
+	100% { background-color: pink; }
+}
+
+@keyframes decr_animation {
+	0% { background-color: blue; }
+	50% { background-color: gray; }
+	100% { background-color: blue; }
+}
+
+@keyframes mult_animation {
+	0% { background-color: orange; }
+	25% { background-color: red; }
+	50% { background-color: orange; }
+	75% { background-color: red; }
+	100% { background-color: orange; }
+}
+
+.random-incr {
+	animation-name: incr_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.random-decr {
+	animation-name: decr_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.random-mult {
+	animation-name: mult_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+    0% { transform: scale(1); }
+    16.7% { transform: scale(1.05); }
+    33.4% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    66.8% { transform: scale(1); }
+    83.5% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse_animation_med {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.05); }
+    20% { transform: scale(1); }
+    30% { transform: scale(1.05); }
+    40% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    90% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse_animation_fast {
+    0% { transform: scale(1); }
+    5% { transform: scale(1.05); }
+    10% { transform: scale(1); }
+    15% { transform: scale(1.05); }
+    20% { transform: scale(1); }
+    25% { transform: scale(1.05); }
+    30% { transform: scale(1); }
+    35% { transform: scale(1.05); }
+    40% { transform: scale(1); }
+    45% { transform: scale(1.05); }
+    50% { transform: scale(1); }
+    55% { transform: scale(1.05); }
+    60% { transform: scale(1); }
+    65% { transform: scale(1.05); }
+    70% { transform: scale(1); }
+    75% { transform: scale(1.05); }
+    80% { transform: scale(1); }
+    85% { transform: scale(1.05); }
+    90% { transform: scale(1); }
+    95% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse-slow {
+    animation-name: pulse_animation;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pulse-med {
+    animation-name: pulse_animation_med;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.pulse-fast{
+	animation-name: pulse_animation_fast;
+    animation-duration: 5000ms;
+    transform-origin:70% 70%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.inactive {
+	background-color: gray;
+	color: #363636;
+}
+
+.inactive button {
+	background-color: gray;
+	color: #363636;
+	visibility: hidden;
+}
+
+.inactive .bold {
+	background-color: gray;
+}
+
+.bold {
+	text-transform: uppercase;
+	background-color: yellow;
+}
+
+.scroll-left p {
+	width: 100%;
+	text-align: center;
+	/* Starting position */
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);	
+	transform:translateX(100%);
+	/* Apply animation to this element */	
+	-moz-animation: scroll-left 15s linear infinite;
+	-webkit-animation: scroll-left 15s linear infinite;
+	animation: scroll-left 15s linear infinite;
+}
+
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+	0%   { -moz-transform: translateX(100%); }
+	100% { -moz-transform: translateX(-100%); }
+	}
+	@-webkit-keyframes scroll-left {
+	0%   { -webkit-transform: translateX(100%); }
+	100% { -webkit-transform: translateX(-100%); }
+	}
+	@keyframes scroll-left {
+	0%   { 
+	-moz-transform: translateX(100%); /* Browser bug fix */
+	-webkit-transform: translateX(100%); /* Browser bug fix */
+	transform: translateX(100%); 		
+	}
+	100% { 
+	-moz-transform: translateX(-100%); /* Browser bug fix */
+	-webkit-transform: translateX(-100%); /* Browser bug fix */
+	transform: translateX(-100%); 
+	}
+}
+
+.fade-in {
+    animation-name: fade-in-animation;
+    animation-duration: 3000ms;
+    /*transform-origin:70% 70%;*/
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes fade-in-animation {
+	0% { opacity: 0; }
+	0% { filter: alpha(opacity=0); }
+	100% { opacity: 1; }
+	100% { filter: alpha(opacity=1); }
+}
+
+.fill-screen {
+    animation-name: fill-screen-animation;
+    animation-duration: 6000ms;
+    /*transform-origin:70% 70%;*/
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes fill-screen-animation {
+	0% { position: fixed; }
+	0% { transform: scale(1); }
+	100% { position: fixed; }
+	100% { transform: scale(20); }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+#magiccontainer {
+	display: flex;
+	background-color: black;
+	align-items: center;
+	justify-content: center;
+}
+
+#magicbutton {
+	background-color: white;
+	color: black;
+}
+

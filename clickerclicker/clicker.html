@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Clicker Clicker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="cursor1.png">
+</head>
+
+<body>
+	<div class="hidden" id="theend">
+		<div id="theendtext">
+			<p>The final click shatters the universe. It's echoes reverberate across the space-time continuum.</p>
+			<p>That infinite sound is the only evidence that you were ever here.</p>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<!--<div class="header">
+			<p id="title">CLICKER CLICKER - A clicker game about clicking</p>
+		</div>-->
+
+		<div class="events-container sticky" id="eventsbar">
+			<div class="innercontainer scroll-left">
+				<p id="event">CLICKER CLICKER - A clicker game about clicking</p>
+			</div>
+		</div>
+
+		<div class="content-container">
+			<div class="left-container">
+				<div class="outercontainer">
+					<div class="innercontainer">
+						<p><span id="clicks">0</span> Clicks</p>
+						<button id="clicksbutton">Click</button>
+					</div>
+
+					<div class="innercontainer" id="magiccontainer">
+						<button class="hidden" id="magicbutton">CLICK ME!!!</button>
+					</div>
+				</div>
+
+				<div class="outercontainer">
+					<div class="innercontainer">
+						<p id="clickratep">
+							<span class="bold">Click Rate: </span>
+							<span id="clickrate">0</span>/s
+						</p>
+					</div>
+					<div class="innercontainer hidden" id="clickbaitp">
+						<p>
+							<span class="bold">Clickbait: </span>
+							<span id="clickbaitcount">1</span>
+						</p>
+					</div>
+					<div class="innercontainer hidden" id="viralvidp">
+						<p>
+							<span class="bold">Viral Videos: </span> 
+							<span id="viralvidscount">1</span>
+						</p>
+					</div>
+					<div class="innercontainer hidden" id="dramap">
+						<p>
+							<span class="bold">Drama: </span> 
+							<span id="dramacount">1</span>
+						</p>
+					</div>
+					<div class="innercontainer hidden" id="botp">
+						<p>
+							<span class="bold">ClickerBots: </span>
+							<span id="botcount">1</span>
+						</p>
+					</div>
+					<div class="innercontainer hidden" id="stansp">
+						<p>
+							<span class="bold">Army of Stans: </span>
+							<span id="stanscount">1</span>
+						</p>
+					</div>
+					<div class="innercontainer hidden" id="overlordp">
+						<p>
+							<span class="bold">ClickerBot Overlord: </span>
+							<span id="overlordcount">1</span>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="mid-container">
+				<img class="" id="cursorimg" src="cursor1.png">
+			</div>
+
+			<div class="right-container">
+				<div class="outercontainer" id="upgrades">
+					<p class="section-label">UPGRADES</p>
+					<!-- <div class="innercontainer" id="upgrade">
+						<p class="upgradename">A Better Clicker:</p>
+						<p class="upgradeprice">50 clicks</p>
+						<p class="updatedesc">+1 click per click</p>
+						<button class="upgradebutton">Buy</button>
+					</div> -->
+				</div>
+
+				<div class="outercontainer" id="shop">
+					<p class="section-label">SHOP</p>
+					<!-- <div class="innercontainer" id="item">
+						<p class="itemname">Robo Clicker:</p>
+						<p class="itemprice">150 clicks</p>
+						<p class="itemdesc">Who needs people when you have bots?</p>
+						<button class="itembutton">Buy</button>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<script type="text/javascript" src="shop.js"></script>
+	<script type="text/javascript" src="events.js"></script>
+	<script type="text/javascript" src="elements.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
